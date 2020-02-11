@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+
+    <!--<AutoCompleteTextView-->
+        <!--android:id="@+id/spn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:completionThreshold="1"-->
+        <!--android:drawableRight="@drawable/down_arr"-->
+        <!--android:hint="Select to Navigation"-->
+        <!--android:minHeight="35dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_below="@+id/rl_top"-->
+        <!--android:textColorHint="#000000"-->
+        <!--android:textSize="14sp" />-->
+
+
+
+
+
+    <!--<android.support.v7.widget.AppCompatSpinner-->
+        <!--android:id="@+id/spn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="35dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/rl_top"-->
+        <!--android:textColor="#000"-->
+        <!--android:background="@drawable/edit_custem"-->
+        <!--android:gravity="center"-->
+        <!--android:theme="@style/MatchSpinnerTheme"-->
+        <!--android:textSize="15sp" />-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/spn_submit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:text="Click"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_below="@+id/spn"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="#4bb134"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="#FFFFFF" />-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_top"
+        android:layout_above="@+id/imageButton"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/coming_soon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:visibility="gone"
+
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:textColor="#4bb134" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

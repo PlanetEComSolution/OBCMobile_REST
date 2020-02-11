@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4bb134"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="View On Map"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_above="@+id/button" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="#4bb134"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/tital_button"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo"
+            android:textColor="#ffff"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

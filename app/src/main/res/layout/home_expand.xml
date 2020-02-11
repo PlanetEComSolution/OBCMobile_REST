@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/set_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/exp"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:divider="@null"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginTop="6dp"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/apply_loan"
+        android:layout_marginBottom="40dp"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null" />
+
+
+
+    <Button
+        android:id="@+id/apply_loan"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Apply Now"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:background="#4bb134"
+        android:layout_above="@+id/imageButton"
+        android:layout_height="35dp" />
+
+
+
+
+    <Button
+        android:id="@+id/apply_now"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Apply Now"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="14dp"
+        android:background="#4bb134"
+        android:layout_above="@+id/imageButton"
+        android:layout_height="35dp" />
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

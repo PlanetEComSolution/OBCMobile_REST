@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Pin the domain www.datatheorem.com -->
+    <!-- Official Android N API -->
+    <domain-config>
+        <domain includeSubdomains="true">www.datatheorem.com</domain>
+     <!--   <domain includeSubdomains="true">https://121.241.255.225</domain>-->
+        <pin-set>
+            <pin digest="SHA-256">k3XnEYQCK79AtL9GYnT/nyhsabas03V+bhRQYHQbpXU=</pin>
+            <pin digest="SHA-256">2kOi4HdYYsvTR1sTIR7RHwlf2SescTrpza9ZrWy7poQ=</pin>
+        </pin-set>
+        <!-- TrustKit Android API -->
+        <!-- Do not enforce pinning validation -->
+        <trustkit-config enforcePinning="false">
+            <!-- Add a reporting URL for pin validation reports -->
+            <report-uri>http://report.datatheorem.com/log_report</report-uri>
+        </trustkit-config>
+    </domain-config>
+</network-security-config>

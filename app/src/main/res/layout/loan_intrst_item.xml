@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4bb134"
+        android:elevation="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tital_button"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo"
+            android:textColor="#ffff" />
+
+
+
+    </LinearLayout>
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="6"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#b9fcc5"
+            android:text="RATE OF INTEREST – LOANS"
+            android:textSize="18dp"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow20"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/TextView212"
+           >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:background="@drawable/shape1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView22"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:text="Particulars">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView23"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Repayment period"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView24"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Loan Amount"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView25"
+            android:gravity="center|left"
+            android:text="Rate (%)                                "
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:typeface="serif" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow220"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/TextView2122"
+            >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:background="@drawable/shape1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView31"
+            android:text="Home Loan"
+            android:layout_marginLeft="7dp"
+
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="From 0 Upto 30 years" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:textColor="#000000"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView34"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:text="9.70" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:background="@drawable/shape1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView41"
+            android:text="Car Loan"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView42"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="From 0 Upto 3 years" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView43"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="Upto Rs. 1.00 Crores" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView44"
+            android:textColor="#000000"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:text="10.20" >
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:textColor="#000000"
+        android:background="@drawable/shape1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView421"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="From 3 years to 7 years" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView434"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView445"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="10.20" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape1"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView48"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:text="Mortgage Loan">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView427"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView436"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="7.5 Crore">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView435"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:text="11.95"
+            android:textColor="#000000">
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:background="@drawable/shape1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView448"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:text="Education Loan">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4247"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="Upto 15 years">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4436"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="Upto 4.00 lacs">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4435"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:text="12.20" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:background="@drawable/shape1"
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView478"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4277"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView7436"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="From 4.00 to 7.5 lacs">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4735"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="11.70" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:background="@drawable/shape1"
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView488"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4297"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView7496"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="Above 7.5 lacs">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView4795"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="11.45" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:background="@drawable/shape1"
+        android:id="@+id/tableRow10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView4808"
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:text="Personal Loan\n (Govt. Employees)">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView42097"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="5 years">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView74096"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView47095"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="11.95" >
+        </TextView>
+
+    </TableRow>
+    <TableRow
+        android:background="@drawable/shape1"
+        android:id="@+id/tableRow11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView4818"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="7dp"
+            android:text="Personal Loan\n (Corp. Employees)">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView42197"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="5 years">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView74196"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView47195"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:text="12.95" >
+        </TextView>
+
+    </TableRow>
+
+</TableLayout>

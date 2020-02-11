@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digital Banking"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/rl_top"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                    android:layout_width="match_parent"
+                android:layout_height="45dp"
+                    android:text="Debit Card"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Internet Banking"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/lin"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Mobile Banking"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="#4bb134"
+                android:text="BHIM/UPI"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lin3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/lin2"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Oriental Batuaa"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Prepaid Card"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/lin3"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="OBC mPAY"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Oriental Unified Pay"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/lin4"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Oriental Prepaid Card"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="E statement"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_below="@+id/lin5"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Mobile Recovery Application"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Contact Point Verification"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="#4bb134"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

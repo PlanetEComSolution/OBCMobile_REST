@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <WebView android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Choose Your Plan"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="18sp" />-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Name"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textSize="16sp" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/email"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Email"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textSize="16sp" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:background="#4bb134"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP Validation ( I Authorize Oriental Bank To Call Me Or SMS Me With Reference To This Enquiry.)"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/otp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="Enter OTP"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/product_name"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Product Name"-->
+                    <!--android:focusable="false"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:editable="false"-->
+                    <!--android:textSize="16sp" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<AutoCompleteTextView-->
+                <!--android:id="@+id/state"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:completionThreshold="1"-->
+                <!--android:drawableRight="@drawable/dwon_ar"-->
+                <!--android:hint="State"-->
+                <!--android:minHeight="35dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textColorHint="@color/black_overlay"-->
+                <!--android:textSize="16sp" />-->
+
+
+            <!--<AutoCompleteTextView-->
+                <!--android:id="@+id/city"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:completionThreshold="1"-->
+                <!--android:drawableRight="@drawable/dwon_ar"-->
+                <!--android:hint="City"-->
+                <!--android:minHeight="35dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textColorHint="@color/black_overlay"-->
+                <!--android:textSize="16sp" />-->
+
+
+            <!--<AutoCompleteTextView-->
+                <!--android:id="@+id/branch"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:completionThreshold="1"-->
+                <!--android:drawableRight="@drawable/dwon_ar"-->
+                <!--android:hint="Branch"-->
+                <!--android:minHeight="35dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textColorHint="@color/black_overlay"-->
+                <!--android:textSize="16sp" />-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="ACCOUNT NUMBER (Only If Existing OBC Customer)"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="16sp" />-->
+
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/account_no"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:hint="Enter Account Number"-->
+                    <!--android:inputType="phone"-->
+                    <!--android:maxLength="14"-->
+                    <!--android:maxLines="1">-->
+                <!--</EditText>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:background="#4bb134"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_marginBottom="55dp"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

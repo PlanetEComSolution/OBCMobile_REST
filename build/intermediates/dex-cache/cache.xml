@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\libs\gcm.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\transforms\dex\debug\folders\1000\2\gcm_3874867cc19179c7a25f0c02f4e518d40d24a678\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3d149a6c08a88e6b93fc68854fdcc9c6acb9bb3e">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2f05043d9698642afdd6f06b3640534dd0cf4f39\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\libs\ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e18c032c01420871b8734937029be5543107ae3">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-2.6.5-jar-with-dependencies_3a5fb079dac10821bc7732bace62b120aca56424\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\libs\ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e18c032c01420871b8734937029be5543107ae3">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.6.5-jar-with-dependencies_3a5fb079dac10821bc7732bace62b120aca56424.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e6f994455d7fd92fa91b9d8c149d98090c80b95b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\libs\gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\Admin\Desktop\Copy_By_Chand\OBCMobile\app\build\intermediates\pre-dexed\debug\gcm_3874867cc19179c7a25f0c02f4e518d40d24a678.jar" />
+    </item>
+
+</items>

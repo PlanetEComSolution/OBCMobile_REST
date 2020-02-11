@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retail Credit"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+
+    <Spinner
+        android:id="@+id/spn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_top"
+        android:textColor="#000000"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:background="@drawable/edit_custem"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spn"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/home_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Home Loan"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Home Top Up"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Auto Loan"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Personal Loan"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="ORIENTAL LOAN AGAINST GOLD"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="OMLS"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin3"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="EDUCATION LOAN"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="SKILL LOAN"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="CAR/VEHICLE LOAN"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="REVERSE MORTGAGE LOAN "
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin5"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="FINANCING OF SECOND HAND CARS"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="EDUCATION LOAN for FORPROFESSIONALS"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_below="@+id/lin6"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="FINANCING AGAINST GOVT"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="LOAN AGAINST DEPOSIT"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:background="#4bb134"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Personal Loan"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="#FFFFFF" />-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

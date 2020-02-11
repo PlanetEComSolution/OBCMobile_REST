@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#4bb134"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+                <Button
+                    android:id="@+id/textView1"
+                    android:layout_width="36dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/logo"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+              >
+
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tect"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#398e26"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Contact Us"
+                    android:textColor="#ffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/lblListHeader"
+                        android:layout_width="fill_parent"
+                        android:text="Alerts"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="30dp"
+
+                        android:background="@drawable/shape2"
+                        android:textSize="15dp"
+                        android:textColor="#ffff" />
+                    <TextView
+                        android:id="@+id/holidays"
+                        android:layout_width="fill_parent"
+                        android:text="Bank Holidays 2019"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="30dp"
+
+                        android:background="@drawable/shape2"
+                        android:textSize="15dp"
+                        android:textColor="#ffff" />
+
+                <ExpandableListView
+                    android:id="@+id/lvExp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tect"
+                    android:layout_marginTop="5dp"
+                    android:groupIndicator="@null"
+                    />
+
+                    <TextView
+                        android:id="@+id/whats_new"
+                        android:layout_width="fill_parent"
+                        android:text="What's New"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape2"
+                        android:textSize="15dp"
+                        android:textColor="#ffff" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</RelativeLayout>

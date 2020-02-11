@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank's Mobile Application"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customers"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/m_pay"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+
+        <ImageView
+            android:id="@+id/m_pay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/m_pay" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Banking (OBC mPAY)"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/m_pay"
+            android:textColor="#000" />
+
+
+
+        <ImageView
+            android:id="@+id/bhim_pay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/obc_bhim" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BHIM Oriental Pay"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/m_pay"
+            android:textColor="#000" />
+
+
+        <ImageView
+            android:id="@+id/aadhar_pay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/obc_aadhar" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BHIM Aadhaar OBC"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/m_pay"
+            android:textColor="#000" />
+        <ImageView
+            android:id="@+id/bank_rewardz"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/obc_rewardz" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oriental Bank Rewardz"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/m_pay"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/bharat_qr"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bharat_qr" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oriental Bharat QR "
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/upi"
+            android:textColor="#000" />
+
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/upi"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center"-->
+           <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/upi" />-->
+
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="UPI (Oriental Unified Pay)"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/upi"-->
+            <!--android:textColor="#000" />-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/butua"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/buttua" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Oriental Batuaa (Mobile Wallet)"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/upi"-->
+            <!--android:textColor="#000" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+
+            android:layout_below="@+id/m_pay"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+
+
+        <ImageView
+            android:id="@+id/shayak"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shayak" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Recovery Application (Sahayak)"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/upi"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/cpv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cpv" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Point Verification (CPV)"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/upi"
+            android:textColor="#000" />
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

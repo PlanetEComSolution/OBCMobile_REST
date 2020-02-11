@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+
+        <Button
+            android:id="@+id/textView1"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_top"
+        android:background="#aef49e"
+        android:paddingBottom="10dp"
+        android:scrollbarStyle="insideOverlay"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#4bb134"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="Suggestions"
+                    android:textColor="#ffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/Customertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp">
+
+                    <requestFocus />
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal">
+
+                    <requestFocus />
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <EditText
+                    android:id="@+id/email_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <EditText
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="Subject "
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <EditText
+                    android:id="@+id/companyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Remarks"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#4bb134"
+                    android:padding="5dp"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/edittextnormal"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

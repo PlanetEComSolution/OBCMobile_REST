@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "793632316647",
+    "firebase_url": "https://obc-saathi.firebaseio.com",
+    "project_id": "obc-saathi",
+    "storage_bucket": "obc-saathi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793632316647:android:3d60696ecedfef49",
+        "android_client_info": {
+          "package_name": "com.planet.obcmobiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793632316647-csgv8824edgf1dh3es0mchv9sl6rl20q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBYefjAr22FW24OgwMN2fXFqXK19AdRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793632316647-csgv8824edgf1dh3es0mchv9sl6rl20q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

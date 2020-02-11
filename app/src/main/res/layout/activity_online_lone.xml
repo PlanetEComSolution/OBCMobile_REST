@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/textView1"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_top"
+        android:paddingBottom="10dp"
+        android:background="#aef49e"
+        android:scrollbars="none"
+
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+
+                    android:text="Apply for Loan"
+                    android:background="#4bb134"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffff"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:focusableInTouchMode="true"
+                    />
+                <Spinner
+                    android:id="@+id/Customertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:background="@drawable/shape1"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp" >
+
+                    <requestFocus />
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal"
+                    android:focusableInTouchMode="true">
+
+                    <requestFocus />
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:maxLength="10"
+                    android:hint="Mobile No"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <EditText
+                    android:id="@+id/email_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:hint="Email Id"
+
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+                <Spinner
+                    android:id="@+id/request"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="Location "
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="PIN"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+
+                <EditText
+                    android:id="@+id/Remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape1"
+                    android:ems="10"
+                    android:hint="Remarks"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/edittextnormal" />
+
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Submit"
+                    android:background="#4bb134"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/edittextnormal" />
+
+                <TextView
+                    android:id="@+id/checkStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:ems="10"
+                    android:text=">> Click here to check status of your Loan"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

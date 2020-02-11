@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fdr_id"
+        android:background="@drawable/shape1"
+        android:text="FDR Calculator with simple interest "
+        android:padding="10dp"
+       android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fdr_id"
+        android:id="@+id/cdr_id"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape1"
+        android:text="CDR Calculator with Compound Interest"
+        android:padding="10dp"
+        android:textColor="#000000"
+        />
+
+
+</RelativeLayout>

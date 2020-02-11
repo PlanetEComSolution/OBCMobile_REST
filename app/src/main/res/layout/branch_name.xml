@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product And Services"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    </LinearLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_top"-->
+        <!--android:padding="15dp"-->
+        <!--android:background="#aef49e"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/branch"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:src="@drawable/general_banking"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_alignBottom="@+id/digital_banking" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="14sp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_below="@+id/branch"-->
+                <!--android:text="Branch Business"-->
+                <!--android:textColor="#000"/>-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/digital_banking"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:src="@drawable/digital_banking"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_toRightOf="@+id/branch"-->
+            <!--android:layout_marginLeft="5dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/branch"-->
+            <!--android:layout_below="@+id/digital_banking"-->
+            <!--android:text="Digital Banking"-->
+            <!--android:textColor="#000"/>-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/retails"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+           <!--android:src="@drawable/retail_credit"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/txt1" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_below="@+id/retails"-->
+            <!--android:text="Retail Credit"-->
+            <!--android:textColor="#000"/>-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+           <!--android:id="@+id/msme"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:src="@drawable/msme"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_toRightOf="@+id/retails"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/txt2" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_below="@+id/msme"-->
+            <!--android:text="            MSME"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/retails"-->
+            <!--android:textColor="#000"/>-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/priority"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+           <!--android:src="@drawable/priority_sector"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_below="@+id/txt3" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/priority"-->
+            <!--android:text="Priority Sector"-->
+            <!--android:textColor="#000"/>-->
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/recovery_and_low"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="110dp"-->
+            <!--android:src="@drawable/recovery"-->
+            <!--android:elevation="4dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:layout_below="@+id/txt4"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/priority" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/priority"-->
+            <!--android:layout_below="@+id/recovery_and_low"-->
+            <!--android:text="Recovery And Low"-->
+            <!--android:textColor="#000"/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true">
+
+
+        <Button
+            android:id="@+id/textView1"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_top"
+        android:paddingBottom="10dp"
+        android:background="#aef49e"
+        android:scrollbars="none"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="#4bb134"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="RATE OF INTEREST LOANS"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:id="@+id/particular"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:text="Particulars"
+                    android:textSize="17dp"  />
+                <Spinner
+                    android:id="@+id/particularSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape1"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/particular"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:id="@+id/repairement"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="Repayment period"
+                    android:textColor="#000000"
+                    android:textSize="17dp"  />
+                <Spinner
+                    android:id="@+id/repspinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape1"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/repairement"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:id="@+id/loanamount"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="Loan Amount"
+                    android:textColor="#000000"
+                    android:textSize="17dp"  />
+                <Spinner
+                    android:id="@+id/amountspinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape1"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/loanamount"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/r5"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:id="@+id/rateofinterest"
+                    android:layout_width="128dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="Rate of Interest(%)"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+                <Spinner
+                    android:id="@+id/rateofinterestspinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape1"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/rateofinterest"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/eee"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+
+                android:background="#4bb134"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true">
+                <Button
+                    android:id="@+id/cal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:text="Calculate your EMI"
+                    android:textStyle="bold"
+                    android:background="#4bb134"
+                    android:textColor="#ffffff"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ww"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#4bb134"
+        android:focusableInTouchMode="true"
+        android:layout_alignBottom="@+id/scrollView1"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/homeeee"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:text="Home"
+            android:textStyle="bold"
+            android:background="#4bb134"
+            android:textColor="#ffffff"
+          android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

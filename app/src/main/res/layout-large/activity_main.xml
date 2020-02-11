@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.javacodegeeks.androidgooglemapsexample.AndroidGoogleMapsActivity">
+
+
+
+    <fragment
+        android:id="@+id/mapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout3" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4bb134"
+        android:paddingRight="5dp"
+        android:paddingLeft="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:padding="5dp"
+            android:background="#4bb134"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:id="@+id/button_home"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:background="#4bb134"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:id="@+id/button_branch" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATM"
+            android:background="#4bb134"
+            android:textColor="#ffff"
+            android:layout_weight="1"
+            android:id="@+id/button_ATM" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearest 5"
+            android:textColor="#ffff"
+            android:background="#4bb134"
+            android:layout_weight="1"
+            android:id="@+id/muliple" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="#4bb134"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/tital_button"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logo"
+            android:textColor="#ffff"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

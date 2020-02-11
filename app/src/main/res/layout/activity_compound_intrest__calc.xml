@@ -1,0 +1,237 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aef49e">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4bb134"
+            android:elevation="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tital_button"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/logo"
+                android:textColor="#ffff" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:elevation="15dp"
+            android:padding="8dp"
+            android:text="Please enter principal deposit amount and press calculate to see the interest amount."
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="53dp"
+            android:padding="8dp"
+            android:text="Principal:"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amt_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignEnd="@+id/intr_editText"
+            android:layout_alignLeft="@+id/intr_editText"
+            android:layout_alignRight="@+id/intr_editText"
+            android:background="@drawable/shape1"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:padding="8dp"
+            android:text="Rate of Interest:"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/intr_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_alignEnd="@+id/button_home"
+            android:layout_alignRight="@+id/button_home"
+            android:layout_toRightOf="@+id/textView17"
+            android:background="@drawable/shape1"
+            android:ems="10"
+            android:hint="Interest"
+            android:inputType="numberDecimal|numberSigned"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Number of Months:"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView17"
+            android:layout_toLeftOf="@+id/intr_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner_id"
+            android:layout_alignStart="@+id/spinner_id"
+            android:layout_below="@+id/spinner_id"
+            android:layout_marginTop="25dp"
+            android:background="#4bb134"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Calculate"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text=" 	Maturity Value"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emi_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView19"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape1"
+            android:editable="false"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emi_edit"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="*Approximate value. Actual interest calculation will be made at the branch."
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#4bb134"
+            android:padding="10dp"
+            android:text="Home"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4bb134"
+            android:padding="10dp"
+            android:text="Reset"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_above="@+id/textView19"
+            android:layout_toRightOf="@+id/textView19"
+            android:layout_toEndOf="@+id/textView19" />
+
+        <Spinner
+            android:id="@+id/spinner_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1"
+            android:entries="@array/months"
+            android:layout_below="@+id/intr_editText"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_alignBottom="@+id/textView18" />
+
+
+        <TextView
+            android:text="CDR Calculator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#4bb134"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+
+
+            />
+    </RelativeLayout>
+</ScrollView>

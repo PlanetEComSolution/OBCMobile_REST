@@ -1,0 +1,57 @@
+<LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4bb134"
+        android:elevation="15dp"
+        android:orientation="vertical">
++
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chevron_left_black_40dp"/>
+
+
+
+        <Button
+            android:id="@+id/tital_button"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+             android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo"
+            android:textColor="#ffff" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView20" />
+
+    <ListView
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contct_list"
+            android:layout_below="@+id/linearLayout3"
+           >
+
+        </ListView>
+
+
+    </LinearLayout>
+

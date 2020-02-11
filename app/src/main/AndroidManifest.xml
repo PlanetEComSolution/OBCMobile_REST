@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.planet.obcmobiles">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!--<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+    <application
+        android:name=".application"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/saathi_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:icon"
+
+        >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name=".AndroidGoogleMapsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllDetails"
+            android:label="@string/title_activity_all_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EMI"
+            android:label="@string/title_activity_emi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Contact_US"
+            android:label="@string/title_activity_contact__us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Interest"
+            android:label="@string/title_activity_interest"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calc_tab"
+            android:label="@string/title_activity_calc_tab"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoanIntrest"
+            android:label="@string/title_activity_interest__loan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tab"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Complain"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coustomer"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Suggestion"
+            android:label="@string/title_activity_suggestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckLoanStatus"
+            android:label="@string/title_activity_check_loan_status"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FDR_CDR_Calc"
+            android:label="@string/title_activity_fdr__cdr__calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Compound_intrest_Calc"
+            android:label="@string/title_activity_compound_intrest__calc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Expadaiable"
+            android:label="@string/title_activity_expadaiable"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NEW_Activity.Product_And_Services_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pin_code"
+            android:label="@string/title_activity_pin_code"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NEW_Activity.Hindi_Shabd_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Expand_Loan_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Retails_Credit_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Bank_App_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Recovery_and_Low_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Mediclaim_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Loan_Status_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Loan_Statud_Web"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Loan_Statud_Web_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Apply_Loan_New"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NEW_Activity.Complain_Segetions_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Complaint_webview" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Suggestion_webview" />
+        <activity
+            android:name=".NEW_Activity.Whats_New_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullscreenImageView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/ThemeNoActionBar" />
+
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@mipmap/saathi_logo" />
+
+    <!--<meta-data
+        android:name="com.google.firebase.messaging.default_notification_color"
+        android:resource="@android:default_notification_color" />
+    -->
+
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_channel_id"
+        android:value="@string/default_notification_channel_id" />
+
+</manifest>

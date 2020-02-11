@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="170dp"
+        android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/atm"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@drawable/atm" />
+
+        <Button
+            android:id="@+id/intrest"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_toRightOf="@+id/atm"
+            android:background="@drawable/rates" />
+
+        <Button
+            android:id="@+id/loan"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/atm"
+            android:background="@drawable/alerts" />
+
+        <Button
+            android:id="@+id/ser_product"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:background="@drawable/product"
+            android:layout_toRightOf="@+id/loan"
+            android:layout_below="@+id/intrest" />
+
+
+        <Button
+            android:id="@+id/emi"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/loan"
+            android:background="@drawable/emi" />
+
+        <Button
+            android:id="@+id/comp_seg"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_toRightOf="@+id/emi"
+            android:layout_below="@id/ser_product"
+            android:background="@drawable/suggestions" />
+
+
+
+
+        <Button
+            android:id="@+id/cont"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/emi"
+            android:background="@drawable/contact" />
+
+
+        <Button
+             android:id="@+id/hindi_shabd"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/emi"
+            android:layout_toRightOf="@+id/cont"
+            android:background="@drawable/banking" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/hindi_shabd"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_toRightOf="@+id/cont"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_below="@+id/comp_seg"-->
+            <!--android:background="#4bbd2f"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/book" />-->
+
+            <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="बैंकिंग शब्दावली"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#FFFFFF" />-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/app_link"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/cont"
+            android:layout_marginBottom="60dp"
+            android:background="#4bbd2f"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank's Mobile Application"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
